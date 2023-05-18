@@ -1,0 +1,84 @@
+.form {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.search {
+    width: 600px;
+    height: 130px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 8px;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.label {
+   display: flex;
+   justify-content: center;
+   margin-top: 10px;
+   font-size: 25px;
+   color: black;
+}
+
+input {
+    width: 500px;
+    height: 38px;
+    margin-left: 50px;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    letter-spacing: 5px;
+}
+
+
+.cocteils {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.drinks {
+    min-height: 500px;
+    min-width: 360px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 8px;
+    border-radius: 5px;
+    transition: 1s;
+    margin-top: 100px;
+}
+
+.images {
+    width: 360px;
+    height: 320px;
+    background-size: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+h3 {
+    font-size: 2rem;
+    letter-spacing: 5px;
+    padding: 20px 0px 0px 20px;
+}
+
+h4 {
+    padding: 10px 0px 0px 20px;
+    letter-spacing: 5px;
+
+}
+
+p {
+    color: #afafafaf;
+    padding: 10px 0px 0px 20px;
+}
+
+a {
+    margin: 10px 0px 0px 20px;
+    color: black;
+    display: block;
+    text-align: start;
+    text-decoration: none;
+}
+
