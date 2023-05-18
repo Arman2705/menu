@@ -31,29 +31,24 @@ const List = () => {
         </form>
         <h1>Cocktails</h1>
 
-        <article>
+        <section className="sec">
             {
-                filter.map ((coctail) => {
-                    const {strDrinkThumb, strDrink, strGlass} = coctail;
-                    return (
-                        
-                        <> 
-                            <section>
+                filter.map (({strDrinkThumb, strDrink, strGlass}) => (   
+                        <article>
                             <div className="cocteils">
                                 <div className="drinks">
-                                    <img src = {strDrinkThumb} className="images"/>
+                                 <div className="img">  <img src = {strDrinkThumb} className="images"/> </div> 
                                     <h3>{strDrink}</h3>
                                     <h4>{strGlass}</h4>
                                     <p>{strGlass}</p>
                                     <a href="#">Details</a>
                                 </div>
                             </div>
-                            </section>
-                        </>
+                        </article>
                     )
-                })
+                )
             }
-        </article>
+        </section>
 
         </>
     )

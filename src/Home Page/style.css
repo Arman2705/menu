@@ -35,9 +35,16 @@ h1 {
 }
 
 
-.cocteils {
+.sec {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: start;
+    margin-left: 160px;
+    flex-wrap: wrap;
+}
+
+
+.cocteils {
+    margin-left: 20px;
 }
 
 .drinks {
@@ -82,9 +89,4 @@ a {
     text-decoration: none;
 }
 
-
-section {
-    display: flex;
-    justify-content: space-evenly;
-}
 
