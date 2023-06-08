@@ -1,13 +1,21 @@
 import './App.css';
-import Header from './Header';
-import List from './Home Page';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import Home from './components/Home';
+import About from './components/About';
+import Newsletter from './components/Newsletter';
 
-function App() {
+
+function App () {
   return (
-    <div className="App">
-      <Header />
-      <List />
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/about' element={<About />} />
+      <Route path='/newsletter' element={<Newsletter />} />
+      <Route path='*' element={<div>Not found</div>} />
+    </Routes>
+    </BrowserRouter>
+    
   );
 }
 

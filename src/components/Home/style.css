@@ -84,9 +84,10 @@ p {
 a {
     margin: 10px 0px 0px 20px;
     color: black;
-    display: block;
+    display: inline;
     text-align: start;
     text-decoration: none;
 }
+
 
 

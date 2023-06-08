@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import './style.css';
+import Headers from "../Header";
 
 
 
-const List = () => {
+const Home = () => {
     const [drink, setDrink] = useState ([]);
     const [value, setValue] = useState ('');
     const gettingData = async () => {
@@ -23,6 +24,7 @@ const List = () => {
 
       return (
         <>
+        <Headers />
         <form className="form">
             <div className="search">
                 <label htmlFor = 'name' className= 'label '> Search Your Favorite Cocktail</label> <br />
@@ -42,6 +44,7 @@ const List = () => {
                                     <h4>{strGlass}</h4>
                                     <p>{strGlass}</p>
                                     <a href="#">Details</a>
+                                    <a href="#">No Intereted</a>
                                 </div>
                             </div>
                         </article>
@@ -49,9 +52,8 @@ const List = () => {
                 )
             }
         </section>
-
         </>
     )
 }
 
-export default List;
+export default Home;
